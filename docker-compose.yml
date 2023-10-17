@@ -1,0 +1,12 @@
+version: '3'
+services:
+  client:
+    build: ./client
+    stdin_open: true
+    tty: true
+    ports:
+      - "8080:3080"
+  server:
+    build: ./server
+    ports:
+      - "3080:3080"

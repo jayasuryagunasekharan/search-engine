@@ -1,0 +1,9 @@
+syntax = "proto3";
+package image_search;
+
+message ImageRequest { string keyword = 1; }
+message ImageResponse { bytes image_data = 1; } 
+
+service ImageSearchService { 
+	rpc SearchImage (ImageRequest) returns (ImageResponse);
+}
