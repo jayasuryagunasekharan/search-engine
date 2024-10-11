@@ -1,4 +1,4 @@
-# Advanced Search Engine
+# Search Engine
 
 ## Project Overview
 
